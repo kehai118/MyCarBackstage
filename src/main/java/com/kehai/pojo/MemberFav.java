@@ -1,0 +1,76 @@
+package com.kehai.pojo;
+
+import java.io.Serializable;
+
+/**
+ * member_fav
+ * @author 
+ */
+public class MemberFav implements Serializable {
+    private Long id;
+
+    private Long memberId;
+
+    /**
+     * 1：资讯
+            2：活动
+            3：车系
+     */
+    private Byte favType;
+
+    private Long contentId;
+
+    private Long favTime;
+
+    private String favIp;
+
+    private static final long serialVersionUID = 1L;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(Long memberId) {
+        this.memberId = memberId;
+    }
+
+    public Byte getFavType() {
+        return favType;
+    }
+
+    public void setFavType(Byte favType) {
+        this.favType = favType;
+    }
+
+    public Long getContentId() {
+        return contentId;
+    }
+
+    public void setContentId(Long contentId) {
+        this.contentId = contentId;
+    }
+
+    public Long getFavTime() {
+        return favTime;
+    }
+
+    public void setFavTime(Long favTime) {
+        this.favTime = favTime;
+    }
+
+    public String getFavIp() {
+        return favIp;
+    }
+
+    public void setFavIp(String favIp) {
+        this.favIp = favIp;
+    }
+}
